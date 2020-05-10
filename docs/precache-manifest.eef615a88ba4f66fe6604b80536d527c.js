@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d1917f65a78df90f5038",
-    "url": "/vue-excel-sort/css/app.66c09f2a.css"
+    "revision": "b57e276e9911098d7512",
+    "url": "/vue-excel-sort/css/app.9eccbf9e.css"
   },
   {
     "revision": "b5778e6595c5cb3593fd",
@@ -20,11 +20,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vue-excel-sort/fonts/element-icons.732389de.ttf"
   },
   {
+    "revision": "6c3948efb41a57cf72199516f71dfa8f",
+    "url": "/vue-excel-sort/img/img/example.png"
+  },
+  {
     "revision": "14c8f885e15bddf008e987ed8dc7e258",
     "url": "/vue-excel-sort/img/img/logo.png"
   },
   {
-    "revision": "ac5c45fea504d5631c60c23164727abc",
+    "revision": "3cb8ae32ba163a0cdd05649efb6b84c6",
     "url": "/vue-excel-sort/index.html"
   },
   {
@@ -32,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vue-excel-sort/js/about.19c556d1.js"
   },
   {
-    "revision": "d1917f65a78df90f5038",
-    "url": "/vue-excel-sort/js/app.5ca80caf.js"
+    "revision": "b57e276e9911098d7512",
+    "url": "/vue-excel-sort/js/app.3f4c9aa6.js"
   },
   {
     "revision": "b4cd36ade47464047357a8c4f1bf5561",

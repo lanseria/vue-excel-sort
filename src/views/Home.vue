@@ -4,7 +4,13 @@
     <div id="body">
       <div id="left">
         <div id="logo">
-          <img src="/img/img/logo.png" class="logo" alt="SheetJS Logo" width="128px" height="128px" />
+          <img
+            :src="`${baseUrl}img/img/logo.png`"
+            class="logo"
+            alt="VueExcelSort Logo"
+            width="128px"
+            height="128px"
+          />
         </div>
         <div id="drop" v-loading="loading">把Xls文件拖入此处</div>
         <input type="file" id="file" value />
@@ -15,14 +21,12 @@
       <div id="right">
         <div id="header">
           <h2>浏览器中在线查看Xls文件</h2>
-          <el-button
-            type="primary"
-            icon="el-icon-download"
+          <el-select
+            style="margin-right:10px;"
+            v-model="sortValue"
             :disabled="disableExportBtn"
-            @click="exportit();"
-          >导出文件</el-button>
-          <el-button icon="el-icon-sort" :disabled="disableExportBtn" @click="sortData();">排序</el-button>
-          <el-select v-model="sortValue" :disabled="disableExportBtn" placeholder="请选择需要排序的字段">
+            placeholder="请选择需要排序的字段"
+          >
             <el-option
               v-for="item in sortOption"
               :key="item.value"
@@ -30,8 +34,19 @@
               :value="item.value"
             ></el-option>
           </el-select>
+          <el-button icon="el-icon-sort" :disabled="disableExportBtn" @click="sortData();">排序</el-button>
+          <el-button
+            type="primary"
+            icon="el-icon-download"
+            :disabled="disableExportBtn"
+            @click="exportit();"
+          >导出文件</el-button>
         </div>
         <div style="margin-top:10px" id="grid"></div>
+        <div class="example">
+          <h2>演示动画</h2>
+          <img :src="`${baseUrl}img/img/example.png`" alt="project example" />
+        </div>
       </div>
     </div>
   </div>
@@ -52,10 +67,11 @@ export default defineComponent({
   setup(props, { root }) {
     const __data: Ref<any[]> = ref([]);
     let cdg: HTMLElement | null = null;
-    const sortValue = ref(null);
+    const sortValue = ref("0");
     const filename = computed(() => root.$store.state.filename);
     const loading = ref(false);
     const disableExportBtn = ref(true);
+    console.log();
 
     const exportit = () => {
       const ws = XLSX.utils.json_to_sheet(__data.value, { skipHeader: true });
@@ -198,6 +214,7 @@ export default defineComponent({
     return {
       loading,
       disableExportBtn,
+      baseUrl: process.env.BASE_URL,
       // todo
       __data,
       filename,
@@ -226,5 +243,11 @@ export default defineComponent({
     flex: 1;
     text-align: left;
   }
+}
+.example {
+  margin-top: 10px;
+  border: 1px solid #eee;
+  text-align: center;
+  padding: 20px 0;
 }
 </style>
