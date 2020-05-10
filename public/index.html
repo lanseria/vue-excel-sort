@@ -6,9 +6,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="icon" type="image/png" href="/img/img/logo.png" />
-    <link rel="stylesheet" href="/css/sheetjs.css" />
-    <script src="/js/shim.js"></script>
+    <link rel="icon" type="image/png" href="<%= BASE_URL %>img/img/logo.png" />
+    <link rel="stylesheet" href="<%= BASE_URL %>css/sheetjs.css" />
+    <script src="<%= BASE_URL %>js/shim.js"></script>
   </head>
   <body>
     <noscript>
@@ -20,7 +20,7 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-    <script src="/js/xlsx.full.min.js"></script>
-    <script src="/js/dropsheet.js"></script>
+    <script src="<%= BASE_URL %>js/xlsx.full.min.js"></script>
+    <script src="<%= BASE_URL %>js/dropsheet.js"></script>
   </body>
 </html>

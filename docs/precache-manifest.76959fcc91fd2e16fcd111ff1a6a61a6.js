@@ -24,7 +24,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vue-excel-sort/img/img/logo.png"
   },
   {
-    "revision": "a26c426ee6e22c297a8ec9000bd7d0e9",
+    "revision": "ac5c45fea504d5631c60c23164727abc",
     "url": "/vue-excel-sort/index.html"
   },
   {

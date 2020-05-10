@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/vue-excel-sort/precache-manifest.98300df9f2c7c69d3f1e86ef37b60dc6.js"
+  "/vue-excel-sort/precache-manifest.76959fcc91fd2e16fcd111ff1a6a61a6.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-excel-sort"});
