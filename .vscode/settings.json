@@ -1,0 +1,75 @@
+{
+  "editor.autoIndent": "advanced",
+  "editor.fontSize": 16,
+  "editor.insertSpaces": true,
+  "editor.mouseWheelZoom": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.minimap.scale": 2,
+  "editor.formatOnSave": true,
+  "extensions.ignoreRecommendations": false,
+  "editor.fontFamily": "Fira Code, Consolas, Microsoft YaHei",
+  "editor.fontLigatures": true,
+  // "files.associations": {
+  //   "*.env.mock": "dotenv",
+  //   "*.env.mock.local": "dotenv"
+  // },
+  // "files.autoSave": "onFocusChange",
+  "files.autoSaveDelay": 1000,
+  "files.eol": "auto",
+  "git.autofetch": true,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": true
+  },
+  "todohighlight.exclude": [
+    "**/*.map",
+    "**/*.min.*",
+    "**/.github/**",
+    "**/.vscode/**",
+    "**/_output/**",
+    "**/bower_components/**",
+    "**/build/**",
+    "**/disp_static/**",
+    "**/dist/**",
+    "**/node_modules/**"
+  ],
+  "todohighlight.include": [
+    "**/*.css",
+    "**/*.html",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.php",
+    "**/*.scss",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.vue"
+  ],
+  "window.zoomLevel": 0,
+  "workbench.editor.tabSizing": "shrink",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["typescript", "vue"],
+  "vetur.format.enable": true,
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "vetur.format.defaultFormatter.js": "prettier",
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "semi": true,
+      "trailingComma": "all"
+    }
+  },
+  "vetur.experimental.templateInterpolationService": true,
+  "javascript.format.enable": true,
+  "typescript.format.enable": true,
+  "prettier.disableLanguages": [
+    "javascript",
+    "vue",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ]
+}

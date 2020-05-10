@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "mikestead.dotenv",
+    "octref.vetur",
+    "wayou.vscode-todo-highlight",
+    "sibiraj-s.vscode-scss-formatter"
+  ],
+}
